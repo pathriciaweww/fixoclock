@@ -1,22 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{html,js,jsx}',
-    './components/**/*.{html,js,jsx}',
-    './sections/**/*.{html,js,jsx}',
-    './styles/**/*.{js,jsx}',
-  ],
-  mode: 'jit',
+    './src/components/**/*.{html,js,jsx}',
+    './src/containers/**/*.{html,js,jsx}',
+    './src/styles/**/*.{html,js,jsx}',
+    './src/**/*.{html,js,jsx}'
+],
   theme: {
     extend: {
-      colors: {
-        'primary-black': '#1A232E',
-        'secondary-white': '#c7c7c7',
-      },
-      transitionTimingFunction: {
-        'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
-      },
+      colors:{
+        'yellow-grad': '#FCA311',
+        'orange-grad': '#FF9F1C',
+        'bg-blue': '#14213D',
+        'light-blue': '#4CC9F0',
+        'greyish' : '#14213D',
+        'white-grey' : '#D9D9D9',
+        'darkest-blue' : '#14213D'
+      }
     },
   },
   plugins: [],
-};
+}
